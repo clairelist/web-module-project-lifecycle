@@ -6,7 +6,15 @@ class App extends React.Component {
     
       state={
         currentUser: 'clairelist',
-        user: {},
+        user: {
+          avatar_url: 'https://avatars.githubusercontent.com/u/89791952?v=4',
+          html_url: 'https://github.com/clairelist',
+          name: 'Claire List',
+          login: 'clairelist',
+          public_repos: 42,
+          followers: 3
+
+        },
         followers: []
       }
 
