@@ -1,28 +1,30 @@
 import React from 'react';
+import User from './components/User';
+import Follower from './components/Follower';
 
 class App extends React.Component {
+    
+      state={
+        currentUser: 'clairelist',
+        user: {},
+        followers: []
+      }
+
   render() {
     return(
     <div>
       <h1>GIT HUB INFORMATIC</h1>
-      <div className='github-handle'>$GITHUB-HANDLE 
+      <div className='github-search'> 
       <span>
         <form>
-          <input placeholder='S-E-A-R-C-H'/>
+          <input placeholder='GitHobe Hnalde'/>
           <button>LOOKUP a USER.</button>
         </form>
       </span>
       </div>
 
-      <div className='user-infos'>
-        <img src='' alt='user $GETUSERAVI'></img>
-        <span>-     Full Nahme</span>
-        <p>username $FROM_USERNAME</p>
-        <p>TOTAL REPOS: $NUMREPOS</p>
-        <p>TOTAL FOLLOWERS: $NUMFOLLOWERS</p>
-      </div>
-
-      <div className='followers-array'>FOLLOWERS FOLLOWERS FOLLOWERS</div>
+      <User />
+      <Follower />
 
     </div>
     );
