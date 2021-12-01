@@ -15,7 +15,23 @@ class App extends React.Component {
           followers: 3
 
         },
-        followers: []
+        followers: [
+          {
+          login: 'jimjamesjimathy',
+          avatar_url: 'https://avatars.githubusercontent.com/u/85250373?v=4',
+          html_url: 'https://github.com/jimjamesjimathy'
+          },
+          {
+            login: 'jimjamesjimathy',
+            avatar_url: 'https://avatars.githubusercontent.com/u/85250373?v=4',
+            html_url: 'https://github.com/jimjamesjimathy'
+            },
+            {
+              login: 'jimjamesjimathy',
+              avatar_url: 'https://avatars.githubusercontent.com/u/85250373?v=4',
+              html_url: 'https://github.com/jimjamesjimathy'
+              }
+        ]
       }
 
   render() {
@@ -31,8 +47,8 @@ class App extends React.Component {
       </span>
       </div>
 
-      <User />
-      <Follower />
+      <User user={user}/>
+      <Follower follower={followers}/>
 
     </div>
     );
