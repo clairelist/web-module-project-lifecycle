@@ -47,8 +47,8 @@ class App extends React.Component {
       </span>
       </div>
 
-      <User user={user}/>
-      <Follower follower={followers}/>
+      <User user={this.state.user}/>
+      <Follower followers={this.state.followers}/>
 
     </div>
     );

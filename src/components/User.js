@@ -2,19 +2,22 @@ import React from 'react';
 
 class User extends React.Component{
     render(){
+
+        const {user} = this.props;
+
         return(
             <div className='user-infos'>
-        <img src='https://avatars.githubusercontent.com/u/89791952?v=4' alt='user $GETUSERAVI'></img>
+        <img src={user.avatar_url} alt='user $GETUSERAVI'></img>
         
         <span className='userinfo-span'>
 
-      <a target='_blank' href='https://github.com/clairelist'>
+      <a target='_blank' href={user.html_url}>
         <h2>Claire List</h2> 
       </a>
 
-        <p>username $FROM_USERNAME</p>
-        <p>TOTAL REPOS: $NUMREPOS</p>
-        <p>TOTAL FOLLOWERS: $NUMFOLLOWERS</p>
+        <p>USERNAHME -- {user.login}</p>
+        <p>TOTAL REPOS: {user.public_repos}</p>
+        <p>TOTAL FOLLOWERS: {user.followers}</p>
 
         </span>
       </div>
