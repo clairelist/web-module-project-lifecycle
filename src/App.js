@@ -1,6 +1,6 @@
 import React from 'react';
 import User from './components/User';
-import Follower from './components/Follower';
+import FollowerList from './components/FollowerList';
 
 class App extends React.Component {
     
@@ -48,7 +48,7 @@ class App extends React.Component {
       </div>
 
       <User user={this.state.user}/>
-      <Follower followers={this.state.followers}/>
+      <FollowerList followers={this.state.followers}/>
 
     </div>
     );
